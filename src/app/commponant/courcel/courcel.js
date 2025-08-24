@@ -16,7 +16,7 @@ export default function CarouselCommponant() {
 					</div>
 					<div className="md:w-1/2 flex justify-center">
 						<div className="relative">
-							<div className="w-80 h-80 bg-white rounded-full shadow-2xl overflow-hidden border-4 border-white">
+							<div className="w-80 h-80  overflow-hidden ">
 								<Image
 									src={"/div.png"}
                                     
