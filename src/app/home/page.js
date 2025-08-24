@@ -1,6 +1,6 @@
 import Header from "./componant/heder/heder";
 import CarouselCommponant from "./componant/carousel/carousel";
-export default function Home() {
+export default function HomePage() {
 
  
   return (
