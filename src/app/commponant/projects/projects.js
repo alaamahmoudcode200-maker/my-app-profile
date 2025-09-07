@@ -83,7 +83,7 @@ export default function Projects() {
 				</div>
 				<div className="text-center mt-12">
 					<a
-						href="#"
+						href="/projects"
 						className={`bg-primary text-white font-bold px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition`}
 					>
 						عرض المزيد من المشاريع
