@@ -72,42 +72,7 @@ export default function Skills() {
 						</div>
 					))}
 				</div>
-				<div className="mt-20 grid grid-cols-1 lg:grid-cols-2 gap-12">
-					<div>
-						<h3 className="text-2xl text-black font-bold mb-6">مستوى المهارات</h3>
-						<div className="space-y-6">
-							{levels.map((level, idx) => (
-								<div key={idx}>
-									<div className="flex text-primary font-bold justify-between items-center mb-2">
-										<span>{level.label}</span>
-										<span className="text-primary font-bold">
-											{level.percent}%
-										</span>
-									</div>
-									<div className="w-full bg-gray-300 rounded-full h-2.5">
-										<div
-											className="bg-primary h-2.5 rounded-full"
-											style={{ width: `${level.percent}%` }}
-										></div>
-									</div>
-								</div>
-							))}
-						</div>
-					</div>
-					<div>
-						<h3 className="text-2xl text-black  font-bold mb-6">لماذا تختارني؟</h3>
-						<div className="bg-white h-60 rounded-2xl p-6 text-gray-600 shadow-lg">
-							<ul className="space-y-4">
-								{reasons.map((reason, idx) => (
-									<li key={idx} className="flex gap-3 items-start">
-										<FaCheckCircle className="text-primary text-xl mr-3 mt-1" />
-										<span>{reason}</span>
-									</li>
-								))}
-							</ul>
-						</div>
-					</div>
-				</div>
+			
 			</div>
 		</section>
 	);

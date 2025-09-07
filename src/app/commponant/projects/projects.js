@@ -1,25 +1,21 @@
 import Image from "next/image";
-
+import Link from "next/link";
 const projects = [
 	{
-		title: "متجر إلكتروني",
+		title: "متجر  A2Z",
+		href: "https://a2z-stor.vercel.app",
 		desc: "متجر إلكتروني سريع مع نظام عربة تسوق وتجربة مستخدم محسنة.",
-		tech: "HTML, CSS, JS",
-		img: "/p.avif",
+		tech: "HTML, CSS, Tailwind Css, React,Next js",
+		img: "/a2zstor.png",
 		gradient: "from-blue-400 to-purple-500",
 	},
+
 	{
-		title: "منصة تحليلية",
-		desc: "لوحة تحكم تفاعلية لعرض البيانات والإحصائيات برسومات بيانية.",
-		tech: "React, Chart.js",
-		img: "/p2.avif",
-		gradient: "from-green-400 to-blue-500",
-	},
-	{
-		title: "مدونة تقنية",
-		desc: "مدونة بتصميم عصري مع نظام إدارة محتوى وتصنيفات متقدمة.",
-		tech: "HTML, CSS, JS",
-				img: "/p3.avif",
+		title: " نظام الفواتير A2Z",
+		href: "https://invoce-app.vercel.app/",
+		desc: "نظام فواتير شامل لإدارة الفواتير وتتبع المدفوعات.",
+		tech: "HTML, CSS, Tailwind Css, React,Next js",
+		img: "/a2zinvoice.png",
 		gradient: "from-orange-400 to-red-500",
 	},
 ];
@@ -49,18 +45,18 @@ export default function Projects() {
 									style={{ objectFit: "cover" }}
 								/>
 								<div className="absolute inset-0 bg-transparent bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition">
-									<a
-										href="#"
+									<Link
+										href={project.href}
 										className="bg-white z-10 text-primary px-6 py-2 rounded-full font-bold mx-2  shadow focus:outline-none focus:ring-2 focus:ring-primary hover:bg-primary hover:text-white transition"
 									>
 										عرض
-									</a>
-									<a
+									</Link>
+									<Link
 										href="#"
 										className="bg-primary text-white px-6 py-2 rounded-full font-bold mx-2"
 									>
 										التفاصيل
-									</a>
+									</Link>
 								</div>
 							</div>
 							<div className="p-6">
@@ -74,12 +70,12 @@ export default function Projects() {
 									<span className="text-sm text-gray-500">
 										{project.tech}
 									</span>
-									<a
-										href="#"
+									<Link
+										href={project.href}
 										className="text-primary font-bold hover:underline"
 									>
 										عرض المشروع
-									</a>
+											</Link>
 								</div>
 							</div>
 						</div>
@@ -88,7 +84,7 @@ export default function Projects() {
 				<div className="text-center mt-12">
 					<a
 						href="#"
-						className="bg-primary text-white font-bold px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition"
+						className={`bg-primary text-white font-bold px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition`}
 					>
 						عرض المزيد من المشاريع
 					</a>

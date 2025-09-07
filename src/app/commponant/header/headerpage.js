@@ -2,10 +2,10 @@ import Link from "next/link";
 import { FaCode } from "react-icons/fa";
 
 const navLinks = [
-  { href: "#home", label: "الرئيسية" },
+  { href: "/", label: "الرئيسية" },
   { href: "#about", label: "عنّي" },
   { href: "#skills", label: "المهارات" },
-  { href: "#projects", label: "المشاريع" },
+  { href: "/projects", label: "المشاريع" },
   { href: "#contact", label: "التواصل" },
 ];
 
@@ -15,7 +15,7 @@ export default function HeaderPage() {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link href="" className="text-primary font-bold text-2xl flex items-center">
           <FaCode className="mr-2" />
-          Portfolio
+          Alaa Mahmoud
         </Link>
         <ul className="hidden md:flex space-x-2">
           {navLinks.map((link) => (
