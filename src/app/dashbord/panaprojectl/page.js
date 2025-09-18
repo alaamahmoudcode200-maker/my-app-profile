@@ -41,7 +41,7 @@ export default function ProjectsPage() {
       <header className="bg-white shadow-md py-6">
         <div className="container mx-auto px-6">
           <div className="flex justify-between items-center">
-            <h1 className="text-3xl font-bold text-indigo-700">معررض مشاريعي</h1>
+            <h1 className="text-3xl font-bold text-indigo-700"> لوحة تحكم</h1>
             <div className={"flex items-center gap-3"}>
             <Link href="/dashbord/addprojects">
               <button className="flex items-center bg-gradient-to-r from-purple-500 to-indigo-600 text-white px-4 py-2 rounded-lg font-semibold hover:from-blue-500 hover:to-indigo-700 transition-all">
