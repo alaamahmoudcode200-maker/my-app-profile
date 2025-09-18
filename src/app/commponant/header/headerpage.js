@@ -5,7 +5,7 @@ const navLinks = [
   { href: "/", label: "الرئيسية" },
   { href: "#about", label: "عنّي" },
   { href: "#skills", label: "المهارات" },
-  { href: "/projects", label: "المشاريع" },
+  { href: "/projectsall", label: "المشاريع" },
   { href: "#contact", label: "التواصل" },
 ];
 

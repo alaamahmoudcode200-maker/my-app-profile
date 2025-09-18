@@ -41,6 +41,7 @@ export default function CarouselCommponant() {
 					</div>
 				</div>
 			</div>
+			
 		</section>
 	);
 }
